@@ -24,22 +24,21 @@ module.exports = {
         prefix: 'fluid-' // set a prefix to use it alongside the default font sizes
       },
       // Creates the text-xx classes
-      // This are the default settings and analog to the tailwindcss defaults
-      // Each `lineHeight` is set unitless and we think that's the way to go especially in context with fluid type.
+      // removed all line-height settings
       values: {
-        'xs': [-2, 1.6],
-        'sm': [-1, 1.6],
-        'base': [0, 1.6],
-        'lg': [1, 1.6],
-        'xl': [2, 1.2],
-        '2xl': [3, 1.2],
-        '3xl': [4, 1.2],
-        '4xl': [5, 1.1],
-        '5xl': [6, 1.1],
-        '6xl': [7, 1.1],
-        '7xl': [8, 1],
-        '8xl': [9, 1],
-        '9xl': [10, 1],
+        'xs': [-2],
+        'sm': [-1],
+        'base': [0],
+        'lg': [1],
+        'xl': [2],
+        '2xl': [3],
+        '3xl': [4],
+        '4xl': [5],
+        '5xl': [6],
+        '6xl': [7],
+        '7xl': [8],
+        '8xl': [9],
+        '9xl': [10],
       }
     },
     variants: {

@@ -70,3 +70,22 @@ h4 {
   white-space: nowrap;
   width: 1px;
 }
+
+._bg-image {
+  background: url(images/bg-curve-mobile.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 500% 100%;
+}
+
+/* breakpoint based on tailwind lg: 1024px */
+@media screen and (min-width: 1024px) {
+  ._bg-image {
+    background: url(images/bg-curve-desktop.svg);
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: 500% 100%;
+  }
+}
