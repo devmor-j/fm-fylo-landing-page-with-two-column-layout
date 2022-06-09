@@ -1,20 +1,19 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
+    colors: {
+      'very-dark-blue': "hsl(243, 87%, 12%)",
+      'desaturated-blue': "hsl(238, 22%, 44%)",
+      'bright-blue': "hsl(224, 93%, 58%)",
+      'moderate-cyan': "hsl(170, 45%, 43%)",
+      'light-grayish-blue': "hsl(240, 75%, 98%)",
+      'light-gray': "hsl(0, 0%, 75%)",
+    },
     extend: {
-      colors: {
-        "clr-main": "hsl(233, 47%, 7%)",
-        "clr-card": "hsl(244, 38%, 16%)",
-        "clr-accent": "hsl(277, 64%, 61%)",
-        "clr-head": "hsl(0, 0%, 100%)",
-        "clr-paragraph": "hsla(0, 0%, 100%, 0.75)",
-        "clr-stat": "hsla(0, 0%, 100%, 0.6)",
-      },
       fontFamily: {
-        "Inter": ['Inter', 'sans-serif'],
-        "Lexend-Deca": ['Lexend Deca', 'sans-serif'],
+        "Raleway": ['Raleway', 'sans-serif'],
+        "Open-Sans": ['Open Sans', 'sans-serif'],
       },
-
     },
   },
   plugins: [],
