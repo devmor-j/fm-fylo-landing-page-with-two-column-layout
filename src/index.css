@@ -51,13 +51,16 @@ h4 {
 }
 
 .\*container {
-  @apply container mx-auto px-4 py-8 sm:px-8 sm:py-12
+  @apply container mx-auto p-4 sm:px-8 sm:py-12
 }
 
 .\*brand-icon {
   @apply border-2 border-light-grayish-blue rounded-full p-2
 }
 
+.\*spacer > * + * {
+  @apply py-16
+}
 /* ------------- custom vanilla css classes ------------- */
 /* notice the "_" sign to differentiate from a custom tailwind class */
 
