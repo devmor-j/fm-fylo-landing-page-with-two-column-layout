@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ["./index.html"],
   theme: {
@@ -44,14 +46,15 @@ module.exports = {
     variants: {
       fluidType: ['responsive']
     },
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         "Raleway": ['Raleway', 'sans-serif'],
         "Open-Sans": ['Open Sans', 'sans-serif'],
       },
-      screens: {
-        'xs': '475px',
-      }
     },
   },
   plugins: [
