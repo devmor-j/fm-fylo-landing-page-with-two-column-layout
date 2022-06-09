@@ -1,0 +1,9 @@
+# Browsers that we support
+
+defaults
+cover 95%
+>0.05%
+not IE > 0
+
+# Run script below to show list of supported browsers:
+# pnpm dlx browserslist

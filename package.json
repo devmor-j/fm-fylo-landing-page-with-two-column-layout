@@ -1,0 +1,24 @@
+{
+  "name": "stats-preview-card-component-main",
+  "version": "0.1.0",
+  "description": "![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tw:dev": "tailwindcss -i ./src/index.css -o ./tailwind.css --watch",
+    "tw:build": "tailwindcss -i ./src/index.css -o tailwind.min.css --minify"
+  },
+  "keywords": [],
+  "author": "Morteza Jamshidi <devmor.j@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.11",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.10",
+    "vite-plugin-html": "^3.2.0"
+  }
+}
