@@ -33,7 +33,7 @@
       <div class="*container flex flex-col lg:flex-row-reverse gap-x-8">
         <img class="mb-12 lg:w-1/2 object-contain" src="./src/images/illustration-1.svg" alt="" draggable="false">
         <div class="lg:w-1/2">
-          <h2 class="font-Open-Sans fluid-text-3xl sm:fluid-text-4xl leading-[3ex] mb-8 text-very-dark-blue">
+          <h2 class="font-Open-Sans fluid-text-3xl sm:fluid-text-4xl leading-[3ex] mb-8">
             All your files in one secure location, accessible anywhere.
           </h2>
           <p class="mb-8">
@@ -54,7 +54,7 @@
       <div class="*container flex flex-col items-center mb-4 lg:flex-row-reverse gap-x-8">
         <img class="pb-16 lg:w-1/2" src="./src/images/illustration-2.svg" alt="" draggable="false">
         <div class="lg:w-1/2 flex flex-col items-center lg:items-start">
-          <h3 class="text-center lg:text-left mb-8 text-very-dark-blue">
+          <h3 class="text-center lg:text-left mb-8">
             Stay productive, wherever you are
           </h3>
           <p class="mb-6">
@@ -63,12 +63,11 @@
           <p class="mb-10">
             Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
           </p>
-          <!-- get #3DA08F green color from arrow svg -->
-          <button class="flex items-center gap-x-2 font-Open-Sans text-[#3DA08F] border-b-2 mb-6 transition hover:brightness-125">
+          <button class="flex items-center gap-x-2 font-Open-Sans text-moderate-cyan border-b-2 mb-6 transition hover:brightness-125">
             See how Fylo works
             <img class="object-contain w-6" src="./src/images/icon-arrow.svg" alt="" draggable="false">
           </button>
-          <figure class="p-8 mx-4 lg:mx-0 mt-8 fluid-text-sm sm:fluid-text-base bg-[white] shadow-lg shadow-light-gray/25 rounded max-w-md">
+          <figure class="p-8 mx-4 lg:mx-0 mt-8 fluid-text-sm sm:fluid-text-base bg-white shadow-lg shadow-light-gray/25 rounded max-w-md">
             <blockquote class="flex flex-col-reverse items-start tracking-wide mb-4">
               <p class="my-3 fluid-text-sm">
                 Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
@@ -199,6 +198,10 @@
       event.preventDefault();
 
       const formTarget = event.target;
+
+      // make sure form has an id
+      if (formTarget.id in allForms === false) return;
+
       const formTargetData = Object.freeze(
         Object.fromEntries(
           new FormData(formTarget)
