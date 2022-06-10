@@ -10,6 +10,8 @@ module.exports = {
       'moderate-cyan': "hsl(170, 45%, 43%)",
       'light-grayish-blue': "hsl(240, 75%, 98%)",
       'light-gray': "hsl(0, 0%, 75%)",
+      'orange': "hsl(39,96%,53%)",
+      'blue': "hsl(214deg 100% 64%)",
       'white': '#fff',
       'transparent': 'transparent',
       'initial': "initial",

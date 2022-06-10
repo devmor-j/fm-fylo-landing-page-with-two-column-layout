@@ -9,6 +9,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <link rel="stylesheet" href="src/index.css">
+  <script src="./src/handleForms.js" defer></script>
 
 </head>
 
@@ -39,9 +40,10 @@
           <p class="mb-8">
             Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
           </p>
-          <form class="flex flex-col lg:flex-row lg:items-center gap-6">
-            <input class="border *bar tracking-wider flex-1 transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="Enter your email…">
-            <button class="font-bold fluid-text-lg *bar bg-bright-blue text-light-grayish-blue transition hover:brightness-125" type="submit">
+          <form onsubmit="onFormSubmit(event)" id="hero-form" class="flex flex-col lg:flex-row lg:items-center gap-8">
+            <input onfocus="hideErrorMessageElement(event)" class="border *bar tracking-wider flex-1 transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="Enter your email…" name="user-email" required>
+            <small class="hidden font-bold text-xs absolute translate-y-[375%] lg:translate-y-[300%] text-orange animate-pulse">Please provide a valid email</small>
+            <button class="*bar font-bold fluid-text-lg bg-bright-blue text-light-grayish-blue transition hover:brightness-125" type="submit">
               Get Started
             </button>
           </form>
@@ -101,8 +103,9 @@
           </p>
         </div>
 
-        <form class="flex flex-col gap-y-6 lg:w-1/2 lg:max-w-md">
-          <input class="*bar tracking-wider text-initial transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="email@example.com">
+        <form onsubmit="onFormSubmit(event)" id="early-accesss-form" class="flex flex-col gap-y-8 lg:w-1/2 lg:max-w-md">
+          <input onfocus="hideErrorMessageElement(event)" class="*bar tracking-wider text-initial transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="email@example.com" name="user-email" required>
+          <small class="hidden font-bold text-xs absolute translate-y-[375%] text-orange animate-pulse">Please provide a valid email</small>
           <button class="*bar bg-bright-blue font-bold lg:w-fit transition hover:brightness-125" type="submit">
             Get Started For Free
           </button>

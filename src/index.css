@@ -55,11 +55,11 @@ h4 {
 }
 
 .\*brand-icon {
-  @apply border-2 border-light-grayish-blue rounded-full p-2 fill-white transition hover:fill-bright-blue  hover:border-bright-blue hover:brightness-150
+  @apply border-2 border-light-grayish-blue rounded-full p-2 fill-white transition hover:fill-blue  hover:border-blue
 }
 
 .\*highlight-link a {
-  @apply transition hover:text-bright-blue hover:brightness-150
+  @apply transition hover:text-blue
 }
 
 .\*spacer > * + * {
