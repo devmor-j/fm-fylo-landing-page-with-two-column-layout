@@ -22,9 +22,9 @@
     <img class="object-contain w-24 xs:w-28 sm:w-fit" src="./src/images/logo.svg" alt="Fylo logo">
 
     <ul class="flex items-center gap-x-4 xs:gap-x-6 sm:gap-x-8 md:gap-x-10 fluid-text-sm xs:fluid-text-base sm:fluid-text-lg">
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Sign in</a></li>
+      <li class="border-b-2 border-b-transparent hover:border-b-moderate-cyan"><a href="#">Features</a></li>
+      <li class="border-b-2 border-b-transparent hover:border-b-moderate-cyan"><a href="#">Team</a></li>
+      <li class="border-b-2 border-b-transparent hover:border-b-moderate-cyan"><a href="#">Sign in</a></li>
     </ul>
   </header>
 
@@ -40,8 +40,8 @@
             Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
           </p>
           <form class="flex flex-col lg:flex-row lg:items-center gap-6">
-            <input class="border *bar tracking-wider flex-1" type="email" placeholder="Enter your email…">
-            <button class="font-bold fluid-text-lg *bar bg-bright-blue text-light-grayish-blue" type="submit">
+            <input class="border *bar tracking-wider flex-1 transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="Enter your email…">
+            <button class="font-bold fluid-text-lg *bar bg-bright-blue text-light-grayish-blue transition hover:brightness-125" type="submit">
               Get Started
             </button>
           </form>
@@ -63,7 +63,7 @@
             Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
           </p>
           <!-- get #3DA08F green color from arrow svg -->
-          <button class="flex items-center gap-x-2 font-Open-Sans text-[#3DA08F] border-b-2 mb-6">
+          <button class="flex items-center gap-x-2 font-Open-Sans text-[#3DA08F] border-b-2 mb-6 transition hover:brightness-125">
             See how Fylo works
             <img class="object-contain w-6" src="./src/images/icon-arrow.svg" alt="" draggable="false">
           </button>
@@ -102,8 +102,8 @@
         </div>
 
         <form class="flex flex-col gap-y-6 lg:w-1/2 lg:max-w-md">
-          <input class="*bar tracking-wider" type="email" placeholder="email@example.com">
-          <button class="*bar bg-bright-blue font-bold lg:w-fit" type="submit">
+          <input class="*bar tracking-wider text-initial transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="email@example.com">
+          <button class="*bar bg-bright-blue font-bold lg:w-fit transition hover:brightness-125" type="submit">
             Get Started For Free
           </button>
         </form>
@@ -117,7 +117,7 @@
       <img class="object-contain" src="./src/images/logo-white.svg" alt="Fylo logo" width="256">
 
       <div class="lg:flex lg:justify-between lg:items-start space-y-8 lg:space-y-0">
-        <address class="space-y-3 not-italic">
+        <address class="space-y-3 not-italic *highlight-link">
           <div class="flex flex-row-reverse justify-end gap-x-6">
             <a href="tel:+15431234567">Phone: +1-543-123-4567</a>
             <img class="object-contain" src="./src/images/icon-phone.svg" alt="" draggable="false">
@@ -127,32 +127,39 @@
             <img class="object-contain" src="./src/images/icon-email.svg" alt="" draggable="false">
           </div>
         </address>
-        <ul class="space-y-4">
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
+        <ul class="space-y-4 *highlight-link">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
-        <ul class="space-y-4">
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
+        <ul class="space-y-4 *highlight-link">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
         </ul>
         <!-- svg brand icons from: https://icones.js.org/collection/ion -->
         <ul class="flex justify-center gap-x-6 sm:gap-x-8 lg:mr-16">
           <li class="*brand-icon">
             <a href="https://www.facebook.com">
-              <img class="object-contain" src="./src/images/brand-icon-facebook.svg" alt="" draggable="false">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" viewBox="0 0 512 512">
+                <path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z" fill="current-color" />
+              </svg>
             </a>
           </li>
           <li class="*brand-icon">
             <a href="https://twitter.com">
-              <img class="object-contain" src="./src/images/brand-icon-twitter.svg" alt="" draggable="false">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" viewBox="0 0 512 512">
+                <path fill="current-color" d="M496 109.5a201.8 201.8 0 0 1-56.55 15.3 97.51 97.51 0 0 0 43.33-53.6 197.74 197.74 0 0 1-62.56 23.5A99.14 99.14 0 0 0 348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 0 0 2.54 22.1 280.7 280.7 0 0 1-203-101.3A95.69 95.69 0 0 0 36 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0 1 35.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 0 1-25.94 3.4 94.38 94.38 0 0 1-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0 1 39.5 405.6a203 203 0 0 1-23.5-1.4A278.68 278.68 0 0 0 166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 0 0 496 109.5Z" />
+              </svg>
             </a>
           </li>
           <li class="*brand-icon">
             <a href="https://www.instagram.com">
-              <img class="object-contain" src="./src/images/brand-icon-instagram.svg" alt="" draggable="false">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" viewBox="0 0 512 512">
+                <path fill="current-color" d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z" />
+                <path fill="current-color" d="M377.33 162.67a28 28 0 1 1 28-28 27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256 74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112 112 112 0 0 0-112-112Z" />
+              </svg>
             </a>
           </li>
         </ul>

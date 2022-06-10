@@ -55,12 +55,17 @@ h4 {
 }
 
 .\*brand-icon {
-  @apply border-2 border-light-grayish-blue rounded-full p-2
+  @apply border-2 border-light-grayish-blue rounded-full p-2 fill-white transition hover:fill-bright-blue  hover:border-bright-blue hover:brightness-150
+}
+
+.\*highlight-link a {
+  @apply transition hover:text-bright-blue hover:brightness-150
 }
 
 .\*spacer > * + * {
   @apply py-16
 }
+
 /* ------------- custom vanilla css classes ------------- */
 /* notice the "_" sign to differentiate from a custom tailwind class */
 

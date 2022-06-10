@@ -10,6 +10,9 @@ module.exports = {
       'moderate-cyan': "hsl(170, 45%, 43%)",
       'light-grayish-blue': "hsl(240, 75%, 98%)",
       'light-gray': "hsl(0, 0%, 75%)",
+      'white': '#fff',
+      'transparent': 'transparent',
+      'initial': "initial",
     },
     fluidType: {
       // your fluid type settings
