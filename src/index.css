@@ -36,11 +36,11 @@ h2 {
 }
 
 h3 {
-  @apply fluid-text-3xl
+  @apply fluid-text-2xl
 }
 
 h4 {
-  @apply fluid-text-2xl
+  @apply fluid-text-xl
 }
 
 /* ------------- custom tailwind css classes ------------ */
@@ -51,7 +51,7 @@ h4 {
 }
 
 .\*container {
-  @apply container mx-auto p-4 sm:px-8 sm:py-12
+  @apply container mx-auto p-4 sm:px-8 sm:py-12 lg:px-12
 }
 
 .\*brand-icon {

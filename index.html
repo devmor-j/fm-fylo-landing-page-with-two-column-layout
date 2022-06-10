@@ -29,73 +29,81 @@
   </header>
 
   <main class="*spacer">
-    <section class="text-center max-w-2xl mx-auto py-16">
-      <img class="mb-12" src="./src/images/illustration-1.svg" alt="" draggable="false">
-      <h2 class="font-Open-Sans fluid-text-3xl sm:fluid-text-4xl leading-[3ex] mb-8">
-        All your files in one secure location, accessible anywhere.
-      </h2>
-      <p class="mb-8">
-        Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
-      </p>
-
-      <form class="flex flex-col space-y-6">
-        <input class="border *bar tracking-wider" type="email" placeholder="Enter your email…">
-        <button class="font-bold fluid-text-lg *bar bg-bright-blue text-light-grayish-blue" type="submit">
-          Get Started
-        </button>
-      </form>
+    <section class="text-center lg:text-left mx-auto py-16 lg:pt-8">
+      <div class="*container flex flex-col lg:flex-row-reverse gap-x-8">
+        <img class="mb-12 lg:w-1/2 object-contain" src="./src/images/illustration-1.svg" alt="" draggable="false">
+        <div class="lg:w-1/2">
+          <h2 class="font-Open-Sans fluid-text-3xl sm:fluid-text-4xl leading-[3ex] mb-8">
+            All your files in one secure location, accessible anywhere.
+          </h2>
+          <p class="mb-8">
+            Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
+          </p>
+          <form class="flex flex-col lg:flex-row lg:items-center gap-6">
+            <input class="border *bar tracking-wider flex-1" type="email" placeholder="Enter your email…">
+            <button class="font-bold fluid-text-lg *bar bg-bright-blue text-light-grayish-blue" type="submit">
+              Get Started
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <section class="flex flex-col items-center bg-light-grayish-blue _bg-image mt-8">
-      <div class="*container flex flex-col items-center mb-4">
-        <img class="pb-16" src="./src/images/illustration-2.svg" alt="" draggable="false">
-        <h3 class="text-center mb-8">
-          Stay productive, wherever you are
-        </h3>
-        <p class="mb-6">
-          Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
-        </p>
-        <p class="mb-10">
-          Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
-        </p>
-        <!-- get #3DA08F green color from arrow svg -->
-        <button class="flex items-center gap-x-2 font-Open-Sans text-[#3DA08F] border-b-2 mb-6">
-          See how Fylo works
-          <img class="object-contain w-6" src="./src/images/icon-arrow.svg" alt="" draggable="false">
-        </button>
-        <figure class="p-8 mx-4 mt-8 fluid-text-sm sm:fluid-text-base bg-[white] shadow-lg shadow-light-gray/25 rounded">
-          <blockquote class="flex flex-col-reverse items-start tracking-wide mb-4">
-            <p class="my-3 fluid-text-sm">
-              Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-            </p>
-            <!-- reversed img for better screen reader UX -->
-            <img class="object-contain" src="./src/images/icon-quotes.svg" alt="" width="16" draggable="false">
-          </blockquote>
-          <figcaption class="flex flex-row-reverse gap-x-4 items-center justify-end">
-            <div>
-              <strong>
-                Kyle Burton
-              </strong>
-              <small class="block text-xs">Founder & CEO, <cite class="not-italic">Huddle</cite></small>
-            </div>
-            <img class="object-contain rounded-full" src="./src/images/avatar-testimonial.jpg" alt="Kyle Burton" width="48">
-          </figcaption>
-        </figure>
+      <div class="*container flex flex-col items-center mb-4 lg:flex-row-reverse gap-x-8">
+        <img class="pb-16 lg:w-1/2" src="./src/images/illustration-2.svg" alt="" draggable="false">
+        <div class="lg:w-1/2 flex flex-col items-center lg:items-start">
+          <h3 class="text-center lg:text-left mb-8">
+            Stay productive, wherever you are
+          </h3>
+          <p class="mb-6">
+            Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+          </p>
+          <p class="mb-10">
+            Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+          </p>
+          <!-- get #3DA08F green color from arrow svg -->
+          <button class="flex items-center gap-x-2 font-Open-Sans text-[#3DA08F] border-b-2 mb-6">
+            See how Fylo works
+            <img class="object-contain w-6" src="./src/images/icon-arrow.svg" alt="" draggable="false">
+          </button>
+          <figure class="p-8 mx-4 lg:mx-0 mt-8 fluid-text-sm sm:fluid-text-base bg-[white] shadow-lg shadow-light-gray/25 rounded max-w-md">
+            <blockquote class="flex flex-col-reverse items-start tracking-wide mb-4">
+              <p class="my-3 fluid-text-sm">
+                Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+              </p>
+              <!-- reversed img for better screen reader UX -->
+              <img class="object-contain" src="./src/images/icon-quotes.svg" alt="" width="16" draggable="false">
+            </blockquote>
+            <figcaption class="flex flex-row-reverse gap-x-4 items-center justify-end">
+              <div>
+                <strong>
+                  Kyle Burton
+                </strong>
+                <small class="block text-xs">Founder & CEO, <cite class="not-italic">Huddle</cite></small>
+              </div>
+              <img class="object-contain rounded-full" src="./src/images/avatar-testimonial.jpg" alt="Kyle Burton" width="48">
+            </figcaption>
+          </figure>
+
+        </div>
       </div>
     </section>
 
     <section class="text-center bg-desaturated-blue text-light-grayish-blue">
-      <div class="*container space-y-8">
-        <h3>
-          Get early access today
-        </h3>
-        <p>
-          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
-        </p>
+      <div class="*container space-y-8 lg:flex lg:items-center lg:justify-between">
+        <div class="lg:w-1/2 lg:max-w-lg lg:text-left">
+          <h3>
+            Get early access today
+          </h3>
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
 
-        <form class="flex flex-col space-y-6">
+        <form class="flex flex-col gap-y-6 lg:w-1/2 lg:max-w-md">
           <input class="*bar tracking-wider" type="email" placeholder="email@example.com">
-          <button class="*bar bg-bright-blue font-bold" type="submit">
+          <button class="*bar bg-bright-blue font-bold lg:w-fit" type="submit">
             Get Started For Free
           </button>
         </form>
@@ -108,47 +116,47 @@
       <!-- create a white variant logo from original -->
       <img class="object-contain" src="./src/images/logo-white.svg" alt="Fylo logo" width="256">
 
-      <address class="space-y-3 not-italic">
-        <div class="flex flex-row-reverse justify-end gap-x-6">
-          <a href="tel:+15431234567">Phone: +1-543-123-4567</a>
-          <img class="object-contain" src="./src/images/icon-phone.svg" alt="" draggable="false">
-        </div>
-        <div class="flex flex-row-reverse justify-end gap-x-6">
-          <a href="mailto:example@fylo">example@fylo.com</a>
-          <img class="object-contain" src="./src/images/icon-email.svg" alt="" draggable="false">
-        </div>
-      </address>
-
-      <ul class="space-y-4">
-        <li>About Us</li>
-        <li>Jobs</li>
-        <li>Press</li>
-        <li>Blog</li>
-      </ul>
-
-      <ul class="space-y-4">
-        <li>Contact Us</li>
-        <li>Terms</li>
-        <li>Privacy</li>
-      </ul>
-      <!-- svg brand icons from: https://icones.js.org/collection/ion -->
-      <ul class="flex justify-center gap-x-6 sm:gap-x-8">
-        <li class="*brand-icon">
-          <a href="https://www.facebook.com">
-            <img class="object-contain" src="./src/images/brand-icon-facebook.svg" alt="" draggable="false">
-          </a>
-        </li>
-        <li class="*brand-icon">
-          <a href="https://twitter.com">
-            <img class="object-contain" src="./src/images/brand-icon-twitter.svg" alt="" draggable="false">
-          </a>
-        </li>
-        <li class="*brand-icon">
-          <a href="https://www.instagram.com">
-            <img class="object-contain" src="./src/images/brand-icon-instagram.svg" alt="" draggable="false">
-          </a>
-        </li>
-      </ul>
+      <div class="lg:flex lg:justify-between lg:items-start space-y-8 lg:space-y-0">
+        <address class="space-y-3 not-italic">
+          <div class="flex flex-row-reverse justify-end gap-x-6">
+            <a href="tel:+15431234567">Phone: +1-543-123-4567</a>
+            <img class="object-contain" src="./src/images/icon-phone.svg" alt="" draggable="false">
+          </div>
+          <div class="flex flex-row-reverse justify-end gap-x-6">
+            <a href="mailto:example@fylo">example@fylo.com</a>
+            <img class="object-contain" src="./src/images/icon-email.svg" alt="" draggable="false">
+          </div>
+        </address>
+        <ul class="space-y-4">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+        <ul class="space-y-4">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+        <!-- svg brand icons from: https://icones.js.org/collection/ion -->
+        <ul class="flex justify-center gap-x-6 sm:gap-x-8 lg:mr-16">
+          <li class="*brand-icon">
+            <a href="https://www.facebook.com">
+              <img class="object-contain" src="./src/images/brand-icon-facebook.svg" alt="" draggable="false">
+            </a>
+          </li>
+          <li class="*brand-icon">
+            <a href="https://twitter.com">
+              <img class="object-contain" src="./src/images/brand-icon-twitter.svg" alt="" draggable="false">
+            </a>
+          </li>
+          <li class="*brand-icon">
+            <a href="https://www.instagram.com">
+              <img class="object-contain" src="./src/images/brand-icon-instagram.svg" alt="" draggable="false">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
