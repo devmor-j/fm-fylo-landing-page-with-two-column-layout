@@ -1,92 +1,126 @@
-# Frontend Mentor - Fylo landing page with two column layout
+# Frontend Mentor - Fylo landing page with two column layout solution
 
-![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
+This is my solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Mobile](./screenshot/%5BDesktop%5D%20Frontend%20Mentor%20Fylo%20landing%20page%20with%20two%20column%20layout.webp)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Mobile screenshot is available [here](./screenshot/%5BMobile%5D%20-%20Frontend%20Mentor%20Fylo%20landing%20page%20with%20two%20column%20layout.webp).
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Links
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Solution URL: [Github Repo](https://github.com/devmor-j/fm-fylo-landing-page-with-two-column-layout)
+- Live Site URL: [Hosted on Netlify](https://devmor-fylo-landing-page-with-two-column-layout.netlify.app/)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## My process
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+1) Start by writing **basic HTML structure**.
 
-## Building your project
+2) Setup **layout and containers** using flexbox. In this stage, we try not to add any *margin* or *padding* because layout should not depend on those properties.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+3) Import **fonts** and apply them by considering inheritance and cascading features in CSS.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+4) (Optional) Apply **fluid typography** system. This project uses an excellent package from [@davidhellmann](https://github.com/davidhellmann/tailwindcss-fluid-type) for fluid types.
 
-## Deploying your project
+5) **Style important elements** like buttons and inputs. Make sure *SVGs* are in good shape. See if it's worth compressing them (don't forget images, either).
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+6) Style sections and prepare for desktop **responsive design**
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+7) (Optional) Customize **scrollbar**, but please note that *Firefox* and *Chrome* have different syntax, and you should be careful here.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+8) Add **spacing** to elements. Prefer *padding* to *margin* if possible or use `gap` in *flex containers* because I believe in most cases there are better alternatives, [read more here](https://betterprogramming.pub/dont-use-margins-for-spacing-between-components-use-gaps-1d3013ac1e80) and also [this article](https://www.freecodecamp.org/news/what-is-margin-collapse-and-how-to-avoid-it/) about *margin collapse* to get the full context.
 
-## Create a custom `README.md`
+9) Final touches and **test on different browsers**. Test with edge case scenarios to see if it still works. Catch any potential bugs.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+10) Now it's time to write **JavaScript**. See what's needed and don't make a *js-fatigue situation* please :)
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+11) **Refactor** code and reuse any code if feasible.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+12) Write good **documents** (also can be written as project progresses).
 
-## Submitting your solution
+13) Deploy and go online.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Built with
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- Semantic HTML5 markup
+- Mobile-first workflow
+- Flexbox
+- [TailwindCSS](https://tailwindcss.com/) - Main framework for CSS styling
+- [TailwindCSS Fluid Type](https://github.com/davidhellmann/tailwindcss-fluid-type) - Bring fluid typography to TailwindCSS
+- [PostCSS](https://postcss.org/) - Post process styles
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling (Builder)
 
-## Sharing your solution
+## What I learned
 
-There are multiple places you can share your solution:
+This project has a convention in naming CSS classes.
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+> Tailwind custom class names must start with an asterisk (`*`).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+For example, this project has a `*bar` class:
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+```css
+/* only tailwind classes are allowed */
+/* `\` is used to escape `*` character */
 
-## Got feedback for us?
+.\*bar {
+  @apply rounded px-6 py-3 shadow-lg
+}
+```
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+This convention makes it much **easier to debug styles** because we know when a class name starts with `*` it must be a *custom tailwind class*.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+All CSS styles should use vanilla tailwind but, if for some reason we want to write vanilla CSS then here's the second convention:
 
-**Have fun building!** 🚀
+> Vanilla CSS class names must be prefixed with an underline (`_`) to indicate this class is not comming from tailwind.
+
+```css
+/* notice the "_" sign to differentiate from a custom tailwind class */
+
+._visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+```
+
+With this rule in mind, no one should mistake tailwind's `hidden` class with `_visually-hidden` since it starts with `_` character.
+
+## Useful resources
+
+If you want to learn how to create a beautiful scrollbar, then read this great [blog post](https://ishadeed.com/article/custom-scrollbars-css/) from [Ahmad Shadeed](https://github.com/shadeed).
+
+For *SVG* compression, I used [SVGOMG](https://jakearchibald.github.io/svgomg/).
+
+Looking for a good SVG icon? Then check out [Icônes](https://icones.js.org/) built by [Anthony Fu](https://github.com/antfu). This project's brand icons are designed by [Ionicons](https://icones.js.org/collection/ion) (the original [repo](https://github.com/ionic-team/ionicons)).
+
+## Author
+
+- Frontend Mentor - [@devmor-j](https://www.frontendmentor.io/profile/devmor-j)
