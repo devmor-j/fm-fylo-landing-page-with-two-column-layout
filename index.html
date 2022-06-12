@@ -215,6 +215,9 @@
         errorMessageElement.classList.add('hidden')
       } else {
         errorMessageElement.classList.remove('hidden')
+        errorMessageElement.previousElementSibling.addEventListener('input', () => {
+          errorMessageElement.classList.add('hidden')
+        }, { once: true })
       }
     }
 
