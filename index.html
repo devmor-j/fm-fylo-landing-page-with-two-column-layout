@@ -28,6 +28,8 @@
     </ul>
   </header>
 
+  <div class="fixed top-6 right-6 select-none pointer-events-none" data-name="toast-container"></div>
+
   <main class="*spacer text-very-dark-blue">
     <section class="text-center lg:text-left mx-auto py-16 lg:pt-8">
       <div class="*container flex flex-col lg:flex-row-reverse gap-x-8">
@@ -193,6 +195,22 @@
       return false;
     }
 
+    async function toastMessage({ message = "Ok!" }) {
+      // toast creation
+      const toast = document.createElement('p');
+      toast.classList.add('*toast');
+      toast.textContent = message;
+
+      // inserting toast into dom
+      const toastContainer = document.querySelector('[data-name="toast-container"]')
+      toastContainer.insertAdjacentElement('afterbegin', toast);
+
+      // remove toast after toast animation end
+      toast.addEventListener('animationend', () => {
+        toastContainer.removeChild(toast);
+      });
+    }
+
     // when any of the forms with id emits submit event
     function onFormSubmit(event) {
       event.preventDefault();
@@ -213,6 +231,7 @@
 
       if (isEmailValid) {
         errorMessageElement.classList.add('hidden')
+        toastMessage({ message: '✅ You have successfully signed up!' });
       } else {
         errorMessageElement.classList.remove('hidden')
         errorMessageElement.previousElementSibling.addEventListener('input', () => {

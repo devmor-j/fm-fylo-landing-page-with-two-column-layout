@@ -13,8 +13,11 @@ module.exports = {
       'orange': "hsl(39,96%,53%)",
       'blue': "hsl(214deg 100% 64%)",
       'white': '#fff',
+      'dark-green': "hsl(100, 40%, 15%)",
+      'light-green': "rgb(128, 255, 64)",
       'transparent': 'transparent',
       'initial': "initial",
+      'inherit': "inherit",
     },
     fluidType: {
       // your fluid type settings

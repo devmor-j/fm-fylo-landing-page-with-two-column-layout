@@ -55,7 +55,7 @@ h4 {
 }
 
 .\*brand-icon {
-  @apply border-2 border-light-grayish-blue rounded-full p-2 fill-white transition hover:fill-blue  hover:border-blue
+  @apply border-2 border-light-grayish-blue rounded-full p-2 fill-white transition hover:fill-blue hover:border-blue
 }
 
 .\*highlight-link a {
@@ -64,6 +64,34 @@ h4 {
 
 .\*spacer > * + * {
   @apply py-16
+}
+
+/* ------------------- toast messages ------------------- */
+
+.\*toast {
+  @apply fluid-text-base font-Raleway font-bold p-3 mb-4 rounded bg-dark-green text-light-green animate-[toast-it_3s]
+}
+
+/* chromium browsers support backdrop but firefox does not */
+@supports (backdrop-filter: blur(0px)) {
+  .\*toast {
+    @apply backdrop-blur bg-light-green/30 text-inherit
+  }
+}
+
+@keyframes toast-it {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+    transform: translate(0%);
+  }
 }
 
 /* ------------- custom vanilla css classes ------------- */
