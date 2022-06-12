@@ -47,7 +47,7 @@ h4 {
 /* notice the "*" sign to differentiate from a native tailwind class */
 
 .\*bar {
-  @apply rounded px-6 py-3 shadow-lg
+  @apply rounded px-6 py-3 shadow-lg disabled:saturate-50 disabled:cursor-wait
 }
 
 .\*container {

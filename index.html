@@ -44,7 +44,7 @@
           <form onsubmit="onFormSubmit(event)" id="hero-form" class="flex flex-col lg:flex-row lg:items-center gap-8">
             <input onfocus="hideErrorMessageElement(event)" class="border *bar tracking-wider flex-1 transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="Enter your email…" name="user-email" required>
             <small class="hidden font-bold text-xs absolute translate-y-[375%] lg:translate-y-[300%] text-orange animate-pulse">Please provide a valid email</small>
-            <button class="*bar font-bold fluid-text-lg bg-bright-blue text-light-grayish-blue transition hover:brightness-125" type="submit">
+            <button class="*bar font-bold fluid-text-lg bg-bright-blue text-light-grayish-blue transition hover:brightness-125 flex items-center justify-center gap-2" type="submit">
               Get Started
             </button>
           </form>
@@ -106,7 +106,7 @@
         <form onsubmit="onFormSubmit(event)" id="early-accesss-form" class="flex flex-col gap-y-8 lg:w-1/2 lg:max-w-md">
           <input onfocus="hideErrorMessageElement(event)" class="*bar tracking-wider text-initial transition-all hover:bg-light-grayish-blue hover:tracking-widest hover:font-bold" type="email" placeholder="email@example.com" name="user-email" required>
           <small class="hidden font-bold text-xs absolute translate-y-[375%] text-orange animate-pulse">Please provide a valid email</small>
-          <button class="*bar bg-bright-blue font-bold lg:w-fit transition hover:brightness-125" type="submit">
+          <button class="*bar bg-bright-blue font-bold lg:w-fit transition hover:brightness-125 flex items-center justify-center gap-2" type="submit">
             Get Started For Free
           </button>
         </form>
@@ -231,7 +231,27 @@
 
       if (isEmailValid) {
         errorMessageElement.classList.add('hidden')
-        toastMessage({ message: '✅ You have successfully signed up!' });
+        new Promise((res) => {
+          const button = event.target.querySelector('button[type="submit"]')
+
+          const loadingSvg = document.createElement('img')
+
+          // from: https://samherbert.net/svg-loaders/
+          loadingSvg.src = './src/images/tail-spin.svg'
+          loadingSvg.alt = ''
+          loadingSvg.width = '28'
+
+          button.append(loadingSvg)
+          button.setAttribute('disabled', '')
+
+          // fake back-end api response delay
+          setTimeout(() => {
+            button.removeChild(loadingSvg)
+            button.removeAttribute('disabled')
+            toastMessage({ message: '✅ You have successfully signed up!' });
+            res()
+          }, 1200);
+        })
       } else {
         errorMessageElement.classList.remove('hidden')
         errorMessageElement.previousElementSibling.addEventListener('input', () => {
